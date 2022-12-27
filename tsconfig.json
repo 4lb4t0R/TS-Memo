@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",  //définit fichier de sortie, compilé, format JS
+        "target": "ES2015"  //définit version du navigateur pour que formules s'adaptent
+    },
+    "files": ["src/app.ts"]  //défint fichier source
+}
