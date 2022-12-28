@@ -58,4 +58,16 @@ var STEPS;
     STEPS["Ouverture"] = "Ouverture";
 })(STEPS || (STEPS = {}));
 const step = STEPS.Developpement;
-export {};
+//Fichiers de déclaration
+document; //CTRL+Click renvoie vers un fichier de décla contenant toutes les commandes possibles, utilisé par l'auto-compléteur
+export class Point {
+    constructor() {
+        this.x = 0;
+        this.y = 2;
+    }
+    move(x, y) {
+        this.x += x;
+        this.y += y;
+        return this;
+    }
+} //grâce à paramètres passé dans tsconfig, crée un dossier de décla avec le JS compilé

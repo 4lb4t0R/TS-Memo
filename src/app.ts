@@ -82,3 +82,16 @@ enum STEPS {
   Ouverture = "Ouverture",
 }
 const step: STEPS = STEPS.Developpement;
+
+//Fichiers de déclaration
+
+document; //CTRL+Click renvoie vers un fichier de décla contenant toutes les commandes possibles, utilisé par l'auto-compléteur
+export class Point {
+  x = 0;
+  y = 2;
+  move(x: number, y: number) {
+    this.x += x;
+    this.y += y;
+    return this;
+  }
+} //grâce à paramètres passé dans tsconfig, crée un dossier de décla avec le JS compilé
